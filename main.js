@@ -10,6 +10,7 @@ function setup() {
     poseNet = ml5.poseNet(video, modelLoaded);
     poseNet.on('pose', gotPoses);
 }
+classifier=m15.imageClassifier('MobileNet',modelLoaded);
 function modelLoaded() {
   console.log('poseNet is initialized');
 }
